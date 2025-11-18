@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cabinet d'arpenteur géomètre - Services de topographie, bornage, division parcellaire et expertise foncière"
+    />
+    <meta
+      name="keywords"
+      content="arpenteur, géomètre, topographie, bornage, division parcellaire, expertise foncière, mesure terrain"
+    />
+    <title>Arpenteur Géomètre Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Navigation principale">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="style/image/logo.jpg" alt="logo Arpenteur Géomètre" class="logo-img">Arpenteur Géomètre Expert</div>
+        <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="navMenu">
+          <li><a href="acceuil.html" class="active">Notre profession</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="activites.html">Nos activités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        const toggle = document.querySelector(".menu-toggle");
+        menu.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+
+      // Fermer le menu lors du clic sur un lien
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const menu = document.getElementById("navMenu");
+          const toggle = document.querySelector(".menu-toggle");
+          menu.classList.remove("active");
+          toggle.classList.remove("active");
+        });
+      });
+    </script>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="accueil">
+        <h1>Notre Profession</h1>
+        <div class="hero-underline"></div>
+      </section>
+
+      <div class="container">
+       <section class="content-section">
+    <div class="image-container">
+        <img src="style/image/illustration.jpg" alt="illustration">
+        <span class="image-placeholder"></span>
+        
+    </div>
+
+    <div class="text-content">
+        <h2>Le métier d'arpenteur géomètre</h2>
+        <p>L'arpenteur-géomètre est un professionnel expert dans la mesure, la délimitation et la représentation des propriétés foncières. Son rôle est essentiel dans l'aménagement du territoire et la gestion du patrimoine immobilier.</p>
+
+        <p>Fort d'une expertise technique et juridique, l'arpenteur-géomètre intervient dans de nombreux domaines : bornage de propriétés, divisions parcellaires, établissement de plans topographiques, implantation de constructions et expertise foncière.</p>
+
+        <p>Professionnel réglementé et assermenté, il garantit la fiabilité et l'authenticité des mesures effectuées. Son intervention est souvent indispensable lors de transactions immobilières, de litiges de voisinage ou de projets d'aménagement.</p>
+
+        <div class="btn-logo-container">
+            <div class="btn-container">
+                <a href="activites.html" class="btn">Découvrir nos services</a>
+            </div>
+
+            <div class="geometre-logo">
+                <a href="https://www.geometre-expert.fr" target="_blank" rel="noopener noreferrer">
+                    <img src="style/image/Logo_Géomètre_Expert.jpg" alt="Logo Géomètre-Expert - Conseiller, Valoriser, Garantir">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+
+
+        <!-- Location Section -->
+        <section class="location-section">
+          <h2>Notre localisation</h2>
+
+          <div class="location-content">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.5412585062854!2d7.097354875716234!3d43.574441157521925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd556a505d729%3A0xe81b072d51be6e!2sArpenteurs%20G%C3%A9om%C3%A8tres!5e0!3m2!1sfr!2sfr!4v1761815184872!5m2!1sfr!2sfr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="address-container">
+              <h3>Cabinet d'Arpentage</h3>
+              <p>
+                <strong>Adresse :</strong><br />
+                1 Impasse Trianon<br />
+                06160 Antibes<br />
+                France
+              </p>
+
+              <p>
+                <strong>Téléphone :</strong><br />
+                04 93 67 60 06
+              </p>
+
+              <p>
+                <strong>Email :</strong><br />
+                vdeleforges@gmail.com
+              </p>
+
+              <p>
+                <strong>Horaires :</strong><br/>
+                jeudi 08:30 à 17:30 <br/>
+                
+                vendredi 08:30 à 16:30<br/>
+                
+                samedi (Toussaint)<br/>
+                
+                Fermé Les horaires peuvent être différents  dimanche Fermé<br/>
+                
+                lundi 08:30 à 17:30<br/>
+                
+                mardi 08:30 à 17:30<br/>
+                  
+                mercredi 08:30 à 17:30<br/>
+              </p>
+
+              <div class="btn-container">
+                <a href="contact.html" class="btn">Nous contacter</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>&copy; 2025 Cabinet d'Arpenteur Géomètre. Tous droits réservés.</p>
+      <p>Membre de l'Ordre des Géomètres-Experts</p>
+      <p style="margin-top: 1rem">
+        <a href="#">Mentions légales</a> |
+        <a href="#">Politique de confidentialité</a> |
+        <a href="#">Conditions générales</a>
+      </p>
+    </footer>
+  </body>
+</html>
