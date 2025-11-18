@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cabinet d'arpenteur géomètre - Services de topographie, relevés, nivellement et cartographie"
+    />
+    <meta
+      name="keywords"
+      content="arpenteur, géomètre, topographie, relevé topographique, nivellement, cartographie, géoréférencement, LIDAR, GPS"
+    />
+    <title>Arpenteur Géomètre Expert - Topographie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Navigation principale">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="style/image/logo.jpg"
+            alt="logo Arpenteur Géomètre"
+            class="logo-img"
+          />
+          Arpenteur Géomètre Expert
+        </div>
+        <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu">
+          <li><a href="acceuil.html" class="active">Notre profession</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="activites.html">Nos activités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+      <h1>Topographie</h1>
+      <div class="hero-underline"></div>
+    </section>
+
+    <!-- Intro -->
+    <section class="foncier-intro">
+      <div class="container">
+        <p>
+          Vincent Deleforges, votre géomètre-expert D.P.L.G., réalise l’ensemble
+          des opérations topographiques indispensables à la conception, la
+          réalisation et le contrôle des projets d’aménagement du territoire.
+        </p>
+        <p>
+          Fort de ses compétences techniques et réglementaires, notre cabinet
+          met à disposition son savoir-faire pour des relevés précis, des études
+          de nivellement et la production de plans géoréférencés conformes aux
+          normes en vigueur (RGF93, NGF-IGN69).
+        </p>
+      </div>
+    </section>
+
+    <!-- Accordéon Topographie -->
+    <section class="foncier-section container">
+      <div class="accordion-item">
+        <button class="foncier-btn">Relevés topographiques</button>
+        <div class="accordion-content">
+          <h2>Relevés topographiques</h2>
+          <p>
+            Les relevés topographiques constituent la base de toute étude de
+            terrain. Ils permettent de représenter en trois dimensions la
+            configuration exacte d’un site : altitudes, pentes, voiries,
+            bâtiments, végétation, réseaux, etc.
+          </p>
+          <p>
+            Le cabinet utilise des technologies de pointe telles que le GPS
+            centimétrique (RTK), la station totale robotisée, et le relevé par
+            scanner laser 3D pour obtenir des données précises au centimètre
+            près.
+          </p>
+          <p>
+            Ces relevés servent à la conception de projets de construction,
+            d’aménagement, ou de VRD (Voiries et Réseaux Divers), mais également
+            à la mise à jour de plans cadastraux et à la modélisation de terrain
+            (MNT, MNS).
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Nivellement et altimétrie</button>
+        <div class="accordion-content">
+          <h2>Nivellement et altimétrie</h2>
+          <p>
+            Le nivellement consiste à déterminer avec précision les altitudes
+            relatives des points d’un terrain par rapport à un repère
+            altimétrique connu (réseau NGF-IGN69).
+          </p>
+          <p>
+            Cette opération est essentielle pour les études hydrauliques, la
+            construction d’ouvrages, ou encore l’implantation de routes et de
+            bâtiments.
+          </p>
+          <p>
+            Le cabinet effectue des nivellements de précision au moyen
+            d’appareils optiques et numériques conformes aux normes NF P94-500,
+            garantissant une marge d’erreur inférieure à quelques millimètres.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Implantations et suivis de chantier</button>
+        <div class="accordion-content">
+          <h2>Implantations et suivis de chantier</h2>
+          <p>
+            L’implantation consiste à matérialiser sur le terrain les axes,
+            limites et points caractéristiques d’un projet conformément aux
+            plans d’exécution.
+          </p>
+          <p>
+            Nos interventions couvrent les implantations de bâtiments, voiries,
+            réseaux, ouvrages d’art et structures industrielles, en conformité
+            avec les tolérances d’implantation imposées par le maître d’œuvre.
+          </p>
+          <p>
+            Nous assurons également le suivi topographique du chantier :
+            contrôles d’altimétrie, déformations de structures, cubatures et
+            calculs de volumes de terrassement.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Cartographie et géoréférencement</button>
+        <div class="accordion-content">
+          <h2>Cartographie et géoréférencement</h2>
+          <p>
+            Le géoréférencement permet de positionner des éléments relevés sur
+            le terrain dans un système de coordonnées reconnu (RGF93 ou Lambert
+            93).
+          </p>
+          <p>
+            Cette opération est indispensable pour l’intégration des données
+            topographiques dans les systèmes d’information géographique (SIG) et
+            pour la conformité aux normes d’échanges de données géographiques.
+          </p>
+          <p>
+            Nous produisons des cartes numériques précises compatibles avec les
+            logiciels SIG (QGIS, ArcGIS) et utilisables par les collectivités,
+            architectes ou bureaux d’études.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Photogrammétrie et LIDAR</button>
+        <div class="accordion-content">
+          <h2>Photogrammétrie et LIDAR</h2>
+          <p>
+            Grâce à l’utilisation de drones et de capteurs LIDAR, notre cabinet
+            réalise des relevés aériens de grande précision permettant de
+            générer des orthophotos, nuages de points et modèles numériques de
+            terrain.
+          </p>
+          <p>
+            Ces méthodes modernes offrent une couverture rapide et une précision
+            centimétrique, particulièrement utile pour les zones difficilement
+            accessibles ou de grande superficie.
+          </p>
+          <p>
+            Toutes les données collectées sont traitées en interne afin de
+            garantir la fiabilité des modèles 3D et la conformité avec les
+            standards IGN et CNIG.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Plans topographiques et livrables</button>
+        <div class="accordion-content">
+          <h2>Plans topographiques et livrables</h2>
+          <p>
+            Les plans topographiques réalisés par notre cabinet sont fournis au
+            format papier et numérique (DWG, DXF, PDF, SHP).
+          </p>
+          <p>
+            Chaque plan comporte les altitudes, courbes de niveau, réseaux
+            visibles, éléments bâtis et limites de propriété apparentes.
+          </p>
+          <p>
+            Ces documents constituent la référence pour les projets
+            d’aménagement, de voirie, d’assainissement et d’urbanisme.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="foncier-btn">
+          Relevés topographiques et altimétrie
+        </button>
+        <div class="accordion-content">
+          <h2>Relevés topographiques et altimétrie</h2>
+          <p>
+            Le relevé topographique consiste à mesurer et représenter avec
+            précision la configuration d'un terrain, incluant ses dimensions,
+            son relief, et tous les éléments naturels ou artificiels qui le
+            composent.
+          </p>
+          <p>
+            <strong>Applications des relevés topographiques :</strong>
+          </p>
+          <p>
+            - Études préalables à la construction<br />
+            - Projets d'aménagement urbain ou rural<br />
+            - Calculs de volumes (terrassements, remblais, déblais)<br />
+            - Études d'assainissement et d'écoulement des eaux<br />
+            - Documents d'urbanisme
+          </p>
+          <p>
+            L'altimétrie permet de déterminer avec exactitude les différences de
+            niveaux et les courbes de niveau, indispensables pour tout projet
+            d'aménagement respectueux du terrain naturel.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">
+          Plans 2D et 3D — intérieur, façades et coupes
+        </button>
+        <div class="accordion-content">
+          <h2>Plans 2D et 3D — intérieur, façades et coupes</h2>
+          <p>
+            Notre cabinet réalise des plans complets de vos bâtiments, qu'il
+            s'agisse de constructions existantes ou de projets neufs.
+          </p>
+          <p>
+            <strong>Plans intérieurs :</strong> Relevés précis des surfaces
+            habitables, distribution des pièces, hauteurs sous plafond,
+            positions des ouvertures et équipements.
+          </p>
+          <p>
+            <strong>Plans de façades :</strong> Représentation détaillée des
+            élévations extérieures avec tous les éléments architecturaux
+            (ouvertures, modénatures, matériaux).
+          </p>
+          <p>
+            <strong>Coupes techniques :</strong> Sections verticales du bâtiment
+            permettant de visualiser les différents niveaux, les hauteurs et
+            l'organisation spatiale.
+          </p>
+          <p>
+            Ces documents sont essentiels pour les demandes d'autorisation
+            d'urbanisme, les projets de rénovation, les diagnostics techniques
+            ou les évaluations patrimoniales.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">Maquettes et modélisations 3D</button>
+        <div class="accordion-content">
+          <h2>Maquettes et modélisations 3D</h2>
+          <p>
+            Grâce aux technologies de pointe, nous créons des modèles numériques
+            tridimensionnels de vos projets ou bâtiments existants.
+          </p>
+          <p>
+            <strong>Avantages de la modélisation 3D :</strong>
+          </p>
+          <p>
+            - Visualisation réaliste et immersive du projet<br />
+            - Détection des problèmes avant la réalisation<br />
+            - Communication facilitée entre tous les intervenants<br />
+            - Calculs automatisés de surfaces et volumes<br />
+            - Base pour le BIM (Building Information Modeling)
+          </p>
+          <p>
+            Ces maquettes numériques constituent un outil précieux pour la
+            conception, la présentation client, le suivi de chantier et la
+            gestion patrimoniale des ouvrages.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="foncier-btn">
+          Acquisition et numérisation 3D (scanner & drone)
+        </button>
+        <div class="accordion-content">
+          <h2>Acquisition et numérisation 3D (scanner & drone)</h2>
+          <p>
+            Notre cabinet dispose d'équipements de mesure 3D de dernière
+            génération pour une précision maximale et une efficacité accrue.
+          </p>
+          <p>
+            <strong>Scanner laser 3D :</strong> Capture de millions de points en
+            quelques minutes pour modéliser avec précision des bâtiments, des
+            ouvrages d'art, des sites industriels ou des espaces intérieurs
+            complexes.
+          </p>
+          <p>
+            <strong>Drone photogrammétrique :</strong> Prises de vues aériennes
+            permettant de créer des modèles 3D de terrains, de toitures
+            inaccessibles, de grands sites ou de zones difficiles d'accès en
+            toute sécurité.
+          </p>
+          <p>
+            <strong>Applications :</strong>
+          </p>
+          <p>
+            - Relevés de patrimoine architectural<br />
+            - Suivi de chantiers et contrôle d'exécution<br />
+            - Inspection d'ouvrages en hauteur<br />
+            - Cartographie de sites étendus<br />
+            - Documentation d'état des lieux
+          </p>
+          <p>
+            Ces technologies permettent un gain de temps considérable tout en
+            garantissant une précision millimétrique et une sécurité optimale
+            lors des relevés.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Cabinet d'Arpenteur Géomètre. Tous droits réservés.</p>
+      <p>Membre de l'Ordre des Géomètres-Experts</p>
+      <p style="margin-top: 1rem">
+        <a href="#">Mentions légales</a> |
+        <a href="#">Politique de confidentialité</a> |
+        <a href="#">Conditions générales</a>
+      </p>
+    </footer>
+
+    <script>
+      // Menu mobile
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        const toggle = document.querySelector(".menu-toggle");
+        menu.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+
+      // Accordéon Topographie
+      const accordions = document.querySelectorAll(".accordion-item");
+
+      accordions.forEach((item) => {
+        const btn = item.querySelector(".foncier-btn");
+        const content = item.querySelector(".accordion-content");
+
+        btn.addEventListener("click", () => {
+          const isOpen = item.classList.contains("active");
+
+          accordions.forEach((i) => {
+            i.classList.remove("active");
+            i.querySelector(".accordion-content").style.maxHeight = null;
+          });
+
+          if (!isOpen) {
+            item.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      });
+
+      // Effet scroll
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
